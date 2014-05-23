@@ -1,22 +1,20 @@
-treefrogpkgbuild
-================
+Archlinux PKGBUILD files for the treefrog framework
+===================================================
 
-Content:
-This PKGBUILD file contains everything to build binary packages for ArchLinux systems using the tool 'makepkg'.
+This repository contains two PKGBUILD files for building packages of the [treefrog framework](http://www.treefrogframework.org) on [Archlinux](http://www.archlinux.org) systems. To build the packages, do the following:
 
-Reference:
-This PKGBUILD is officially available in the ArchLinux User Repository (AUR): https://aur.archlinux.org/packages/treefrog/
+```bash
+$ git clone git@github.com:nsommer/treefrogpkgbuild.git
+$ cd treefrogpkgbuild
+$ cd framework
+$ makepkg -s
+$ sudo pacman -U <packagefilename>.pkg.tar.xz
+$ cd ../tools
+$ makepkg -s
+$ sudo pacman -U <packagefilename>.pkg.tar.xz
+```
 
-Build:
-To build the package on your system, download the PKGBUILD and type 'makepkg'.
+You can also find the PKGBUILDs in the official [AUR](http://aur.archlinux.org):
 
-Install:
-To install the created package on your system, use 'pacman -U <packagename>'.
-
-License:
-The treefrog framework itself is available under a BSD license. This PKGBUILD is available under GPLv2.
-
-Further information:
-ArchLinux: http://www.archlinux.org
-
-Treefrog: http://www.treefrogframework.org
+* [treefrog-framework](https://aur.archlinux.org/packages/treefrog-framework/)
+* [treefrog-tools](https://aur.archlinux.org/packages/treefrog-tools/)
