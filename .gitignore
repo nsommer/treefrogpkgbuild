@@ -1,0 +1,9 @@
+framework/pkg
+framework/src
+framework/*.pkg.tar.xz
+framework/*.tar.gz
+tools/pkg
+tools/src
+tools/*.pkg.tar.xz
+tools/*.tar.gz
+ 
